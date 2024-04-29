@@ -52,7 +52,7 @@ const CartPage = () => {
     if (item.quantity > 1) {
       try {
         const response = await fetch(
-          `http://localhost:6001/carts/${item._id}`,
+          `https://foodi-dkbu.onrender.com/carts/${item._id}`,
           {
             method: "PUT",
             headers: {
@@ -105,7 +105,7 @@ const CartPage = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`http://localhost:6001/carts/${item._id}`)
+          .delete(`https://foodi-dkbu.onrender.com/carts/${item._id}`)
           .then((response) => {
             if (response) {
               refetch();
