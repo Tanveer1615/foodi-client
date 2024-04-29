@@ -20,7 +20,7 @@ const CartPage = () => {
   // Handle quantity increase
   const handleIncrease = async (item) => {
     try {
-      const response = await fetch(`http://localhost:6001/carts/${item._id}`, {
+      const response = await fetch(`https://foodi-dkbu.onrender.com/carts/${item._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

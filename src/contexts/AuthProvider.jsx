@@ -59,7 +59,7 @@ const AuthProvider = ({ children }) => {
 
       if (currentUser) {
         const userInfo = { email: currentUser.email };
-        axios.post("http://localhost:6001/jwt", userInfo).then((response) => {
+        axios.post("https://foodi-dkbu.onrender.com/jwt", userInfo).then((response) => {
           // console.log(response.data.userdata);
           setUser(response.data.userdata);
 
