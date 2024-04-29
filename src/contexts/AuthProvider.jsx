@@ -61,7 +61,7 @@ const AuthProvider = ({ children }) => {
         const userInfo = { email: currentUser.email };
         axios.post("https://foodi-dkbu.onrender.com/jwt", userInfo).then((response) => {
           // console.log(response.data.userdata);
-          setUser(response.data.userdata);
+          // setUser(response.data.userdata);
 
           // console.log(response.data.userdata);
           // console.log(response.data.token);
