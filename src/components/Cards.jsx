@@ -34,7 +34,7 @@ const Cards = ({ item }) => {
       };
 
       axios
-        .post("http://localhost:6001/carts", cartItem)
+        .post("https://foodi-dkbu.onrender.com/carts", cartItem)
         .then((response) => {
           if (response) {
             refetch(); // refetch cart

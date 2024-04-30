@@ -61,11 +61,11 @@ const Modal = () => {
           email: result?.user?.email,
         };
         axios
-          .post("http://localhost:6001/users", userInfor)
+          .post("https://foodi-dkbu.onrender.com/users", userInfor)
           .then((response) => {
             // console.log(response);
             alert("Signin successful!");
-            navigate("/");
+            // navigate("/");
           });
       })
       .catch((error) => console.log(error));
